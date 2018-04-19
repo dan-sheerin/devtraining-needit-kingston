@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="12" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="yes" label="Prudential Employee" mandatory="true" max_length="40" name="u_choice_employee_yes_no" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="no" label="Laptop/Webcam" mandatory="true" max_length="40" name="u_choice_laptop_webcam" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="room 1" label="Host Location" mandatory="true" max_length="40" name="u_choice_location" type="string">
+            <choice>
+                <element label="Room 1" sequence="0" value="room 1"/>
+                <element label="Room 2" sequence="1" value="room 2"/>
+                <element label="Room 3" sequence="2" value="room 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="room 1" label="Participant Location" mandatory="true" max_length="40" name="u_choice_participant" type="string">
+            <choice>
+                <element label="Room 1" sequence="0" value="room 1"/>
+                <element label="Room 2" sequence="1" value="room 2"/>
+                <element label="Room 3" sequence="2" value="room 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="at&amp;t" label="Telephony" mandatory="true" max_length="40" name="u_choice_telephony" type="string">
+            <choice>
+                <element label="AT&amp;T" sequence="0" value="at&amp;t"/>
+                <element label="MeetMe" sequence="1" value="meetme"/>
+                <element label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="no" label="Video Cart Required" mandatory="true" max_length="40" name="u_choice_video_cart" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="New Date/Time" max_length="40" name="u_glide_date_time_4" type="glide_date_time"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
