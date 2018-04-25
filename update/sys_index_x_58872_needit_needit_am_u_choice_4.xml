@@ -2,7 +2,7 @@
 <record_update table="sys_index">
     <sys_index action="INSERT_OR_UPDATE">
         <col_name_string>u_choice_4</col_name_string>
-        <index_col_name element="u_choice_4" name="x_58872_needit_needit_am">5993909adb211300da8cfe1ebf961987</index_col_name>
+        <index_col_name>5993909adb211300da8cfe1ebf961987</index_col_name>
         <logical_table_name>x_58872_needit_needit_am</logical_table_name>
         <sys_class_name>sys_index</sys_class_name>
         <sys_created_by>system</sys_created_by>
@@ -16,7 +16,7 @@
         <sys_update_name>sys_index_x_58872_needit_needit_am_u_choice_4</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2018-04-20 15:01:21</sys_updated_on>
-        <table display_value="NeedIt-AM" name="x_58872_needit_needit_am">233d75e5db2d1300da8cfe1ebf961982</table>
+        <table/>
         <unique_index>false</unique_index>
     </sys_index>
 </record_update>
